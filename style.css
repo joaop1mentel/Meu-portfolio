@@ -17,7 +17,7 @@ body {
 /* Efeito de máquina de escrever */
 .typewriter h2 {
   overflow: hidden;
-  font-size: clamp(1.5rem, 8vw, 3rem); 
+  font-size: clamp(1.5rem, 6vw, 3rem); 
   border-right: 0.15em solid #93c5fd;
   white-space: nowrap;
   margin: 0 auto;
