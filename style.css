@@ -17,7 +17,7 @@ body {
 /* Efeito de máquina de escrever */
 .typewriter h2 {
   overflow: hidden;
-  font-size: clamp(1.5rem, 5vw, 2.5rem); 
+  font-size: clamp(1.5rem, 6vw, 3rem); 
   border-right: 0.15em solid #93c5fd;
   white-space: nowrap;
   margin: 0 auto;
@@ -32,12 +32,25 @@ body {
   from { width: 0 }
   to { width: 100% }
 }
-
 @keyframes blink-caret {
   from, to { border-color: transparent }
   50% { border-color: #93c5fd; }
 }
-
+@media (max-width: 375px) {
+  .typewriter h2 {
+    font-size: clamp(1.3rem, 4.5vw, 1.8rem);
+    letter-spacing: 0.03em;
+    animation: 
+      typing 2.2s steps(28, end),
+      blink-caret 0.7s step-end infinite;
+    max-width: 100%;
+  }
+}
+@media (min-width: 481px) and (max-width: 768px) {
+  .typewriter h2 {
+    font-size: clamp(1.4rem, 4vw, 2rem);
+  }
+}
 /* Cards de habilidades */
 .skill-card {
   transition: all var(--transition-time) ease;
