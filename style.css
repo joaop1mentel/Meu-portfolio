@@ -17,11 +17,11 @@ body {
 /* Efeito de máquina de escrever */
 .typewriter h2 {
   overflow: hidden;
-  font-size: clamp(1.5rem, 5vw, 3rem); 
+  font-size: clamp(1.5rem, 5vw, 2.5rem); 
   border-right: 0.15em solid #93c5fd;
   white-space: nowrap;
   margin: 0 auto;
-  letter-spacing: 0.10em; 
+  letter-spacing: 0.05em; 
   animation: 
     typing 3.5s steps(40, end),
     blink-caret 0.75s step-end infinite;
