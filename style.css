@@ -17,23 +17,25 @@ body {
 /* Efeito de máquina de escrever */
 .typewriter h2 {
   overflow: hidden;
-  border-right: 0.15em solid var(--primary-color);
+  font-size: clamp(1.5rem, 8vw, 3rem); 
+  border-right: 0.15em solid #93c5fd;
   white-space: nowrap;
   margin: 0 auto;
-  letter-spacing: 0.15em;
+  letter-spacing: 0.10em; 
   animation: 
     typing 3.5s steps(40, end),
     blink-caret 0.75s step-end infinite;
+  max-width: 100%;
 }
 
 @keyframes typing {
-  from { width: 0; }
-  to { width: 100%; }
+  from { width: 0 }
+  to { width: 100% }
 }
 
 @keyframes blink-caret {
-  from, to { border-color: transparent; }
-  50% { border-color: var(--primary-color); }
+  from, to { border-color: transparent }
+  50% { border-color: #93c5fd; }
 }
 
 /* Cards de habilidades */
@@ -120,7 +122,6 @@ body {
 .floating {
   animation: float 3s ease-in-out infinite;
 }
-
 /* Barra de progresso */
 .progress-container {
   width: 100%;
@@ -146,11 +147,6 @@ body {
   background-color: #68D391;
 }
 
-/* Navbar */
-#navbar {
-  transition: all var(--transition-time) ease;
-}
-
 /* Efeitos de hover */
 .hover-effect {
   transition: transform var(--transition-time) ease, color var(--transition-time) ease;
@@ -159,4 +155,33 @@ body {
 .hover-effect:hover {
   transform: scale(1.05);
   color: var(--primary-color);
+}
+@media (max-width: 767px) {
+  #mobile-menu {
+    transition: all 0.3s ease;
+    max-height: 0;
+    overflow: hidden;
+  }
+  
+  #mobile-menu.active {
+    max-height: 300px;
+    padding: 10px 0;
+  }
+}
+@media (max-width: 640px) {
+  .typewriter h2 {
+    font-size: 1.8rem;
+    animation: 
+      typing 2.5s steps(30, end),
+      blink-caret .75s step-end infinite;
+  }
+  
+  #sobre, #habilidades, #projetos, #contato {
+    padding-top: 6rem;
+    padding-bottom: 4rem;
+  }
+  
+  .skill-card {
+    margin-bottom: 1rem;
+  }
 }
