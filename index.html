@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Portfólio de João Marcelo, estudante de Engenharia de Computação na UERJ">
+    <meta name="keywords" content="portfólio, desenvolvedor, engenharia de computação, UERJ">
+    <meta name="author" content="João Marcelo Macedo Pimentel">
+    <title>Portfólio | João Marcelo - Desenvolvedor</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css" rel="stylesheet">
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+  </head>
+
+  <body class="font-sans text-white bg-gradient-to-br from-blue-950 via-blue-900 to-blue-800 transition-colors duration-300 dark:bg-gradient-to-br dark:from-gray-900 dark:via-gray-800 dark:to-gray-900">
+
+  <section class="min-h-screen flex flex-col items-center justify-center text-center px-4">
+    <img 
+      id="avatar"
+      class="w-32 h-32 rounded-full mx-auto mb-6 transition-transform duration-300 hover:scale-110 cursor-pointer shadow-lg floating border-4 border-blue-400"
+      src="eu.jpeg" 
+      alt="João Marcelo" 
+      onclick="mostrarConteudo()"
+    />
+    <div class="typewriter">
+      <h2 class="text-4xl font-bold mb-4">Olá, eu sou João Marcelo</h2>
+    </div>
+    <p class="text-sm text-blue-100 mb-8">Clique na imagem para acessar meu portfólio</p>
+    <div class="flex space-x-4">
+      <a href="https://github.com/joaop1mentel" target="_blank" class="text-2xl text-blue-300 hover:text-white transition-colors">
+        <i class="fab fa-github"></i>
+      </a>
+      <a href="https://www.linkedin.com/in/joao-marcelo-macedo-pimentel-78a37b1b2" target="_blank" class="text-2xl text-blue-300 hover:text-white transition-colors">
+        <i class="fab fa-linkedin"></i>
+      </a>
+      <a href="mailto:joaomarcelopimentel@gmail.com" class="text-2xl text-blue-300 hover:text-white transition-colors">
+        <i class="fas fa-envelope"></i>
+      </a>
+    </div>
+  </section>
+
+  <div id="conteudo" class="hidden opacity-0 transition-opacity duration-700">
+
+    <section id="navbar" class="fixed w-full bg-blue-950/90 backdrop-blur-sm z-40 py-4 shadow-lg">
+      <nav class="max-w-6xl mx-auto px-6 flex justify-between items-center">
+        <a href="#" class="text-xl font-bold text-blue-300 hover:text-white transition-colors">JM</a>
+        <div class="flex space-x-6">
+          <a href="#sobre" class="nav-link hover:text-blue-300 transition-colors">Sobre</a>
+          <a href="#habilidades" class="nav-link hover:text-blue-300 transition-colors">Habilidades</a>
+          <a href="#projetos" class="nav-link hover:text-blue-300 transition-colors">Projetos</a>
+          <a href="#contato" class="nav-link hover:text-blue-300 transition-colors">Contato</a>
+        </div>
+      </nav>
+    </section>
+
+    <section id="sobre" class="max-w-4xl mx-auto px-6 py-24 text-white">
+      <h3 class="text-center text-3xl font-bold mb-8 relative inline-block">
+        <span class="relative z-10">Sobre mim</span>
+        <span class="absolute bottom-0 left-0 w-full h-2 bg-blue-500 opacity-30 transform translate-y-1"></span>
+      </h3>
+      <div class="flex flex-col md:flex-row items-center gap-8">
+        <div class="md:w-1/3 flex justify-center">
+          <img src="eu.jpeg" alt="João Marcelo" class="w-48 h-48 rounded-full object-cover shadow-xl border-4 border-blue-400">
+        </div>
+        <div class="md:w-2/3">
+          <p class="text-blue-100 leading-relaxed mb-4">
+            Sou um estudante de 23 anos, atualmente cursando Engenharia de Computação na UERJ, apaixonado por tecnologia e design. me dedico a transformar ideias em ferramentas funcionais que ajudam pessoas no dia a dia.
+          </p>
+          <p class="text-blue-100 leading-relaxed mb-4">
+            Tenho experiência com desenvolvimento web front-end e back-end, além de conhecimento em estruturas de dados e algoritmos. Acredito que a tecnologia deve ser acessível e intuitiva para todos.
+          </p>
+          <div class="flex flex-wrap gap-2 justify-center mt-6">
+            <span class="px-3 py-1 bg-blue-900/50 rounded-full text-sm">HTML/CSS</span>
+            <span class="px-3 py-1 bg-blue-900/50 rounded-full text-sm">JavaScript</span>
+            <span class="px-3 py-1 bg-blue-900/50 rounded-full text-sm">Python</span>
+            <span class="px-3 py-1 bg-blue-900/50 rounded-full text-sm">C</span>
+            <span class="px-3 py-1 bg-blue-900/50 rounded-full text-sm">Tailwind</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="habilidades" class="py-16 bg-blue-950/50">
+      <div class="max-w-6xl mx-auto px-6">
+        <h3 class="text-center text-3xl font-bold mb-12 relative inline-block">
+          <span class="relative z-10">Habilidades</span>
+          <span class="absolute bottom-0 left-0 w-full h-2 bg-blue-500 opacity-30 transform translate-y-1"></span>
+        </h3>
+        
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+          <!-- Card HTML/CSS -->
+          <div class="skill-card bg-white/10 backdrop-blur-sm p-6 rounded-xl border border-blue-900/30">
+            <div class="flex items-center mb-4">
+              <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" alt="HTML5" class="w-10 h-10 mr-3">
+              <h4 class="text-xl font-semibold">HTML5 & CSS3</h4>
+            </div>
+            <p class="text-blue-100 mb-4">Experiência em criar estruturas semânticas e estilização avançada com CSS.</p>
+            <div class="progress-container">
+              <div class="progress-bar" style="width: 90%"></div>
+            </div>
+          </div>
+          
+          <!-- Card JavaScript -->
+          <div class="skill-card bg-white/10 backdrop-blur-sm p-6 rounded-xl border border-blue-900/30">
+            <div class="flex items-center mb-4">
+              <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" alt="JavaScript" class="w-10 h-10 mr-3">
+              <h4 class="text-xl font-semibold">JavaScript</h4>
+            </div>
+            <p class="text-blue-100 mb-4">Conhecimento em ES6+, manipulação do DOM e conceitos fundamentais.</p>
+            <div class="progress-container">
+              <div class="progress-bar" style="width: 60%"></div>
+            </div>
+          </div>
+          
+          <!-- Card Python -->
+          <div class="skill-card bg-white/10 backdrop-blur-sm p-6 rounded-xl border border-blue-900/30">
+            <div class="flex items-center mb-4">
+              <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" alt="Python" class="w-10 h-10 mr-3">
+              <h4 class="text-xl font-semibold">Python</h4>
+            </div>
+            <p class="text-blue-100 mb-4">Experiência com scripts, automação e desenvolvimento de pequenas aplicações.</p>
+            <div class="progress-container">
+              <div class="progress-bar" style="width: 75%"></div>
+            </div>
+          </div>
+          
+          <!-- Card C -->
+          <div class="skill-card bg-white/10 backdrop-blur-sm p-6 rounded-xl border border-blue-900/30">
+            <div class="flex items-center mb-4">
+              <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/c/c-original.svg" alt="C" class="w-10 h-10 mr-3">
+              <h4 class="text-xl font-semibold">Linguagem C</h4>
+            </div>
+            <p class="text-blue-100 mb-4">Conhecimento em estruturas de dados, algoritmos e programação estruturada.</p>
+            <div class="progress-container">
+              <div class="progress-bar" style="width: 95%"></div>
+            </div>
+          </div>
+          <!-- Card Tailwind -->
+          <div class="skill-card bg-white/10 backdrop-blur-sm p-6 rounded-xl border border-blue-900/30">
+            <div class="flex items-center mb-4">
+              <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/tailwindcss/tailwindcss-original.svg" alt="Tailwind" class="items-center w-7 h-8">
+              <h4 class="text-xl font-semibold ml-4">Tailwind CSS</h4>
+            </div>
+            <p class="text-blue-100 mb-4">Experiência em desenvolvimento responsivo com utility-first CSS.</p>
+            <div class="progress-container">
+              <div class="progress-bar" style="width: 65%"></div>
+            </div>
+          </div>          
+          <!-- Card Git -->
+          <div class="skill-card bg-white/10 backdrop-blur-sm p-6 rounded-xl border border-blue-900/30">
+            <div class="flex items-center mb-4">
+              <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg" alt="Git" class="w-10 h-10 mr-3">
+              <h4 class="text-xl font-semibold">Git</h4>
+            </div>
+            <p class="text-blue-100 mb-4">Controle de versão e trabalho colaborativo em projetos.</p>
+            <div class="progress-container">
+              <div class="progress-bar" style="width: 50%"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="projetos" class="py-16 bg-gradient-to-br from-blue-950/50 to-blue-900/50">
+      <div class="max-w-6xl mx-auto px-6">
+        <h3 class="text-center text-3xl font-bold mb-12 relative inline-block">
+          <span class="relative z-10">Projetos</span>
+          <span class="absolute bottom-0 left-0 w-full h-2 bg-blue-500 opacity-30 transform translate-y-1"></span>
+        </h3>
+        
+        <div class="flex items-center justify-center gap-6">
+          <button id="btn-prev" class="text-4xl hover:text-blue-400 transition-colors focus:outline-none">
+            <i class="ri-arrow-left-s-line"></i>
+          </button>
+          
+          <div class="relative w-full max-w-2xl h-64">
+            <div class="sheet active bg-white rounded-lg p-6 shadow-xl">
+              <h4 class="text-lg font-semibold mb-2 text-black text-center">Build my PC</h4>
+              <p class="text-gray-600 mb-3 text-center">Aplicativo para montar seu PC de qualidade sem complicações.</p>
+              <a href="#" class="text-blue-600 hover:underline text-center">Ver projeto</a>
+            </div>
+            
+            <div class="sheet bg-white rounded-lg p-6 shadow-xl">
+              <h4 class="text-lg font-semibold mb-2 text-black text-center">CRUD em C</h4>
+              <p class="text-gray-600 mb-3 text-center">Sistema completo para criar, ler, atualizar e deletar usuários por ID.</p>
+              <a href="https://github.com/joaop1mentel/Crud/blob/main/crud.c" target="_blank" class="text-blue-600 hover:underline text-center">Ver código</a>
+            </div>
+            
+            <div class="sheet bg-white rounded-lg p-6 shadow-xl">
+              <h4 class="text-lg font-semibold mb-2 text-black text-center">Implementação de Deque</h4>
+              <p class="text-gray-600 mb-3 text-center">Código em C para inserir números em um vetor usando o sistema de deque.</p>
+              <a href="https://github.com/joaop1mentel/Estudo/blob/main/Deque" target="_blank" class="text-blue-600 hover:underline text-center">Ver código</a>
+            </div>
+            
+            <div class="sheet bg-white rounded-lg p-6 shadow-xl">
+              <h4 class="text-lg font-semibold mb-2 text-black text-center">Seu projeto aqui</h4>
+              <p class="text-gray-600 mb-3 text-center">Meu próximo projeto pode ser na sua empresa!</p>
+              <a href="#contato" class="text-blue-600 hover:underline text-center">Vamos conversar</a>
+            </div>
+          </div>
+          
+          <button id="btn-next" class="text-4xl hover:text-blue-400 transition-colors focus:outline-none">
+            <i class="ri-arrow-right-s-line"></i>
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <section id="contato" class="py-16 bg-blue-950/70">
+      <div class="max-w-3xl mx-auto px-6 text-center">
+        <h3 class="text-3xl font-bold mb-12 relative inline-block">
+          <span class="relative z-10">Contato</span>
+          <span class="absolute bottom-0 left-0 w-full h-2 bg-blue-500 opacity-30 transform translate-y-1"></span>
+        </h3>
+        
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-6 mb-12">
+          <a href="https://www.instagram.com/jmsnpsht/" target="_blank" class="bg-white/10 backdrop-blur-sm p-4 rounded-lg hover:bg-blue-900/50 transition-colors border border-blue-900/30">
+            <i class="fab fa-instagram text-3xl mb-2 text-blue-300"></i>
+            <h4 class="font-semibold">Instagram</h4>
+            <p class="text-sm text-blue-200">@jmsnpsht</p>
+          </a>
+          
+          <a href="https://www.linkedin.com/in/joao-marcelo-macedo-pimentel-78a37b1b2" target="_blank" class="bg-white/10 backdrop-blur-sm p-4 rounded-lg hover:bg-blue-900/50 transition-colors border border-blue-900/30">
+            <i class="fab fa-linkedin text-3xl mb-2 text-blue-300"></i>
+            <h4 class="font-semibold">LinkedIn</h4>
+            <p class="text-sm text-blue-200">João Marcelo</p>
+          </a>
+          
+          <a href="https://github.com/joaop1mentel" target="_blank" class="bg-white/10 backdrop-blur-sm p-4 rounded-lg hover:bg-blue-900/50 transition-colors border border-blue-900/30">
+            <i class="fab fa-github text-3xl mb-2 text-blue-300"></i>
+            <h4 class="font-semibold">GitHub</h4>
+            <p class="text-sm text-blue-200">joaop1mentel</p>
+          </a>
+        </div>
+        
+        <a href="mailto:joaomarcelopimentel@gmail.com" class="inline-block bg-blue-600 text-white px-8 py-3 rounded-full hover:bg-blue-700 transition-colors wave-btn focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-opacity-50">
+          <i class="fas fa-paper-plane mr-2"></i> Enviar Email
+        </a>
+      </div>
+    </section>
+
+    <footer class="text-center py-6 bg-blue-950 text-sm text-white border-t border-blue-900">
+      <div class="max-w-6xl mx-auto px-6 flex flex-col md:flex-row justify-between items-center">
+        <p>© 2025 João Marcelo Macedo Pimentel. Todos os direitos reservados.</p>
+      </div>
+    </footer>
+    
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
